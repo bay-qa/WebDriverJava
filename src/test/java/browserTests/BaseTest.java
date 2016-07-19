@@ -24,7 +24,12 @@ public class BaseTest {
 
     private void setUpBrowser() {
 
-        String path = "/Users/abarabash/Documents/MyProject/WebDriverJava/src/test/resources/geckodriver";
+        String userdir = System.getProperty("user.dir");
+
+        String path = userdir + "/src/test/resources/geckodriver";
+
+
+
 
         System.setProperty("webdriver.gecko.driver", path);
 
