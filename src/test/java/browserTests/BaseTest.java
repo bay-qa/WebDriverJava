@@ -28,9 +28,6 @@ public class BaseTest {
 
         String path = userdir + "/src/test/resources/geckodriver";
 
-
-
-
         System.setProperty("webdriver.gecko.driver", path);
 
     }
