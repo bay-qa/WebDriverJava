@@ -2,6 +2,7 @@ package browserTests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 /**
@@ -19,6 +20,13 @@ public class BaseTest {
         driver = new FirefoxDriver();
 
 
+
+    }
+
+    @AfterSuite
+    public void afterAllTests() {
+
+        driver.quit();
 
     }
 
