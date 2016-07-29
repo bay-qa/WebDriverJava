@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.awt.*;
 import java.io.File;
 
 /**
@@ -56,6 +57,17 @@ public class Day4 extends BaseTest {
         Assert.assertEquals(resultMessage, "You successfuly clicked an alert");
 
     }
+
+    @Test
+    public void JavaScriptAlertTest3() throws AWTException {
+
+        driver.get("http://the-internet.herokuapp.com/javascript_alerts");
+        driver.findElement(By.cssSelector(".example li:nth-child(3) button")).click();
+        Alert popup = driver.switchTo().alert();
+
+
+    }
+
 
 
 }
