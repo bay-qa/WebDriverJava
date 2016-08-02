@@ -15,7 +15,7 @@ public class BaseTest {
     @BeforeSuite
     public void setUpDefault() {
 
-        setUpBrowser();
+        //setUpBrowser();
 
         driver = new FirefoxDriver();
 
