@@ -1,5 +1,6 @@
 package browserTests;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
@@ -15,12 +16,9 @@ public class BaseTest {
     @BeforeSuite
     public void setUpDefault() {
 
-        setUpBrowser();
+        //setUpBrowser();
 
         driver = new FirefoxDriver();
-
-
-
     }
 
     @AfterSuite
