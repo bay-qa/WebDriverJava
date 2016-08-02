@@ -65,6 +65,8 @@ public class Day4 extends BaseTest {
         driver.findElement(By.cssSelector(".example li:nth-child(3) button")).click();
         Alert popup = driver.switchTo().alert();
 
+        //popup
+
 
     }
 

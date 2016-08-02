@@ -20,7 +20,6 @@ public class BaseTest {
         driver = new FirefoxDriver();
 
 
-
     }
 
     @AfterSuite
