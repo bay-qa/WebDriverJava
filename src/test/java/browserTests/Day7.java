@@ -1,6 +1,8 @@
 package browserTests;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -29,5 +31,22 @@ public class Day7 extends BaseTest {
 
         // Assert that the hover displayed
         assertTrue(driver.findElement(By.className("figcaption")).isDisplayed());
+    }
+
+    @Test
+    public void rightClickTest() throws InterruptedException {
+        driver.get("http://the-internet.herokuapp.com/context_menu");
+        WebElement menu = driver.findElement(By.id("hot-spot"));
+        Actions action = new Actions(driver);
+        action.contextClick(menu)
+                .sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ENTER)
+                .perform();
+        Alert alert = driver.switchTo().alert();
+
+        assertTrue(alert.getText().contains("You selected a context menu"));
+
     }
 }
