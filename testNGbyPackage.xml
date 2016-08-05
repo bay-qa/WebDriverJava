@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SuiteFromPackage" verbose="1">
+
+    <test name="AllTestsInAnotherPackage">
+
+        <packages>
+            <package name="anotherPackage"/>
+        </packages>
+
+    </test>
+
+</suite>
