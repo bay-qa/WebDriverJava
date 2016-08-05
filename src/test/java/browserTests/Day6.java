@@ -62,7 +62,7 @@ public class Day6 extends BaseTest {
 
         driver.get("http://the-internet.herokuapp.com/dropdown");
 
-        Select dropdown = new Select(driver.findElement(By.id("dropdown")));
+        Select dropdown = new Select(driver.findElement(By.id("dropdown1")));
 
         List<WebElement> allOptions = dropdown.getOptions();
 
