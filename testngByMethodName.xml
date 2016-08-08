@@ -2,9 +2,13 @@
 
 <suite name="Suite1" verbose="1">
 
-    <test name="Regression1">
+    <test name="rightClickTest">
         <classes>
-            <class name="browserTests.Day6">
+            <class name="browserTests.Day7">
+                <methods>
+                    <include name="rightClickTest" />
+
+                </methods>
 
             </class>
         </classes>

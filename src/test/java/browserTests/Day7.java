@@ -9,6 +9,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
+import java.lang.reflect.Method;
+import java.net.MalformedURLException;
+
 import static org.testng.Assert.assertTrue;
 
 /**
@@ -34,8 +37,10 @@ public class Day7 extends BaseTest {
         assertTrue(driver.findElement(By.className("figcaption")).isDisplayed());
     }
 
-    @Test
-    public void rightClickTest() {
+    @Test(dataProvider = "hardCodedBrowsers")
+    public void rightClickTest(String browser, String version, String os, Method method) throws MalformedURLException {
+
+        driver = this.createSauseLabsBrowser(browser, version, os, method);
 
         System.out.println("rightClickTest starting...");
 
