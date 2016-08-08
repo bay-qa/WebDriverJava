@@ -37,6 +37,8 @@ public class Day7 extends BaseTest {
     @Test
     public void rightClickTest() {
 
+        System.out.println("rightClickTest starting...");
+
         driver.get("http://the-internet.herokuapp.com/context_menu");
 
         WebElement square = driver.findElement(By.id("hot-spot"));

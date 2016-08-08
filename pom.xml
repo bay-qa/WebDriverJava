@@ -42,7 +42,7 @@
                     <version>2.19</version>
                     <configuration>
                         <suiteXmlFiles>
-                            <file>testngByMethodName.xml</file>
+                            <file>testNGparallelSuite.xml</file>
                         </suiteXmlFiles>
                     </configuration>
                 </plugin>
