@@ -34,6 +34,7 @@ public class Day7 extends BaseTest {
         assertTrue(driver.findElement(By.className("figcaption")).isDisplayed());
     }
 
+
     @Test
     public void rightClickTest() {
 
