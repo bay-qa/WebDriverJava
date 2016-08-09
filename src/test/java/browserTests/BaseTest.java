@@ -50,9 +50,9 @@ public class BaseTest {
         caps.setCapability(CapabilityType.BROWSER_NAME, browser);
         caps.setCapability("platform", os);
         caps.setCapability("version", version);
-        // caps.setCapability("name", method.getName());
+        caps.setCapability("name", method.getName());
 
-        System.out.println("Launching ");// method.getName() + " at " + urlString);
+        System.out.println("Launching " + method.getName() + " at " + urlString);
 
         return new RemoteWebDriver(new URL(urlString), caps);
 
