@@ -44,6 +44,14 @@
                         <suiteXmlFiles>
                             <file>testngByMethodName.xml</file>
                         </suiteXmlFiles>
+                        <parallel>methods</parallel>
+                        <threadCount>20</threadCount>
+                        <properties>
+                            <property>
+                                <name>dataproviderthreadcount</name>
+                                <value>2</value>
+                            </property>
+                        </properties>
                     </configuration>
                 </plugin>
             </plugins>
